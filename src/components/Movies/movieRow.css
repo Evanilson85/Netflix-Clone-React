@@ -1,0 +1,104 @@
+.container {
+  margin-bottom: 30px;
+}
+
+.container h1 {
+  margin: 0 0 0 30px;
+}
+.movie {
+  overflow-x: hidden;
+  padding-left: 30px;
+}
+/* .movieRow {
+  width: 999999px;
+} */
+
+.movieRow {
+  transition: all ease 0.5s;
+}
+.rowItem {
+  display: inline-block;
+  width: 150px;
+  position: relative;
+}
+
+.rowItem img {
+  width: 100%;
+  transform: scale(0.9);
+  cursor: pointer;
+  transition: all ease 0.2s;
+}
+.rowItem:hover img {
+  transform: scale(1);
+}
+.rowItem:hover .btns {
+  opacity: 1;
+}
+.left,
+.right {
+  font-size: 100px;
+  position: absolute;
+  height: 225px;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 1;
+  transition: all ease 0.5s;
+}
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+.newContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* .newContainer:hover .btns {
+  opacity: 1;
+} */
+.btns {
+  height: 100%;
+  width: 100%;
+  /* border-radius: 50%; */
+  background-color: rgb(0 0 0 / 81%);
+  z-index: 3;
+  border: none;
+  position: absolute;
+  opacity: 0;
+  transition: all ease 0.5s;
+  outline: none;
+  cursor: pointer;
+}
+.btns a {
+  width: 50px;
+  /* background-color: aqua; */
+  border-radius: 50%;
+  font-size: 50px;
+  color: #fff;
+  outline: none;
+  text-decoration: none;
+}
+.nones {
+  display: none;
+}
+@media (min-width: 768px) {
+  .left,
+  .right {
+    opacity: 0;
+  }
+  .container:hover .left,
+  .container:hover .right {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,102 @@
+.header {
+  height: 100vh;
+}
+.gradiente {
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to top, #000 10%, transparent 90%);
+}
+.horiz {
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to right, #000 30%, transparent 70%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 30px;
+}
+.name {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.info {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.poiter {
+  display: inline-block;
+  color: #46d369;
+}
+.year {
+  display: inline-block;
+  margin-left: 15px;
+}
+.temporadas {
+  display: inline-block;
+}
+.descriton {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #999;
+  max-width: 100%;
+  margin-right: 30px;
+}
+
+.btn {
+  margin-top: 15px;
+}
+
+.listBtn,
+.assitir {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 15px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-left: 10px;
+  opacity: 1;
+  transition: 0.2s linear;
+}
+.assitir {
+  background-color: #e50914;
+  color: #fff;
+}
+.listBtn {
+  background-color: #333;
+  color: #fff;
+}
+
+.listBtn:hover,
+.assitir:hover {
+  opacity: 0.7;
+}
+
+.genero {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #999;
+}
+
+@media (min-width: 768px) {
+  .name {
+    font-size: 60px;
+  }
+
+  .info {
+    font-size: 18px;
+  }
+  .descriton {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #999;
+    max-width: 40%;
+  }
+  .listBtn,
+  .assitir {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,63 @@
+.menu {
+  background-color: transparent;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  z-index: 5;
+  left: 0;
+}
+/* .bt {
+  width: 30%;
+} */
+.burgur {
+  display: block;
+  background-color: rgb(233, 11, 11);
+  width: 30px;
+  height: 2px;
+  position: relative;
+  top: 29px;
+  left: 15px;
+  transition: 0.5s ease-in-out;
+}
+.burgur:before,
+.burgur:after {
+  background-color: rgb(255, 0, 0);
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+}
+
+.burgur:before {
+  top: -10px;
+}
+
+.burgur:after {
+  bottom: -10px;
+}
+#click {
+  display: none;
+}
+#click:checked ~ label .burgur {
+  transform: rotate(45deg);
+}
+#click:checked ~ label .burgur:before {
+  transform: rotate(90deg);
+  top: 0;
+}
+#click:checked ~ label .burgur:after {
+  transform: rotate(90deg);
+  bottom: 0;
+}
+
+@media (min-width: 768px) {
+  label {
+    display: none;
+  }
+  /* .bt {
+    width: 0%;
+  } */
+}
